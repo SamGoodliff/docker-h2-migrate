@@ -1,0 +1,8 @@
+version: "3.2"
+
+services:
+      h2-migrate:
+        image: h2-migrate
+        volumes: 
+          - ./MERCURIAL_REPO:/mercurial
+          - ./TARGET_DIR:/git
